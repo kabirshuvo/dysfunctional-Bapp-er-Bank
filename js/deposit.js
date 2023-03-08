@@ -6,6 +6,10 @@ document.getElementById("btn-deposit").addEventListener('click', function(){
     3. convert string value to a number
     */
     const newDepositAmount = getInputFieldValueById("deposit-field");
+    if(isNaN(newDepositAmount)){
+      alert('Please Provied a Valid Number');
+      return;
+    }
     /* 
       1. get previous deposit total by id
   
